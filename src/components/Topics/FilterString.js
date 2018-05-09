@@ -32,8 +32,11 @@ export default class FilterString extends Component {
         return (
             <div className="puzzleBox filterStringPB">
             <h4> Filter String </h4>
-            <span> className="</span>
-            </div>
+            <span className="puzzleText"> Cars: { JSON.stringify(this.state.cars, null, 10) } </span>
+            <input className="inputLine" onChange={ (e) => this.handleChange(e.target.value) }></input>
+            <button className="confirmationButton" onClick={ () => this.filterCars(this.state.userInput) }> Filter </button>
+            <span className="resultsBox filterStringRB"> Filtered Cars: { JSON.stringify(this.state.filteredCars, null, 10) } </span>
+          </div>
         )
+      }
     }
-}
