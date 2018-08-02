@@ -8,7 +8,7 @@ import FilterString from "../Topics/FilterString"
 import Sum from "../Topics/Sum"
 
 export default class TopicBrowser extends Component {
-    render(){
+    render (){
         return (
             <div>
             <p>Hello World</p>
